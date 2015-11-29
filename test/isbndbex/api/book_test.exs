@@ -1,15 +1,17 @@
 defmodule IsbndbexTest.Api.Book do
   use ExUnit.Case
-  doctest Isbndbex.Api.Book
+
+  require Logger
 
   import Isbndbex.Api.Book
 
-  test "mah first test" do
-    assert 1 + 1 == 2
-  end
+  @key Application.get_env(:isbndbex, :key)
+  @pragprog "020161622X"
 
   test "trying to get a book" do
-    get_book("3K0HLATP", "020161622X")
-    assert true
+    get_book(@key, @pragprog).data
+    |> List.first
+    |> Dict.get(:title)# == "The pragmatic programmer"
+    |> Logger.debug 
   end
 end
