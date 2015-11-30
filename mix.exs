@@ -1,6 +1,10 @@
 defmodule Isbndbex.Mixfile do
   use Mix.Project
 
+  [:index_searched, :data, :author_data, :name, :id, :awards_text, :marc_enc_level, :subject_ids, :summary, :isbn13, :dewey_normal,
+   :title_latin, :publisher_id, :dewey_decimal, :publisher_text, :language, :physical_description_text, :isbn10, :edition_info, :urls_text,
+   :lcc_number, :publisher_name, :book_id, :notes, :title, :title_long, :result_count, :page_count, :current_page, :author_ids]
+
   def project do
     [app: :isbndbex,
      version: "0.0.1",
