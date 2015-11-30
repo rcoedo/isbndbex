@@ -1,4 +1,4 @@
-# Isbndbex
+# Isbndbex [![Build Status](https://travis-ci.org/rcoedo/isbndbex.svg?branch=master)](https://travis-ci.org/rcoedo/isbndbex)
 
 isbndbex is an elixir wrapper for [isbndb.com](http://isbndb.com/).
 
