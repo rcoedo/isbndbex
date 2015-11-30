@@ -1,3 +1,8 @@
+language: elixir
+elixir:
+    - 1.1.1
+otp_release:
+    - 18.0
 env:
   global:
     secure: YXW0WSnEV4ZnnPPqYhNeliKzQh1S/ETduN+QgjRCqe4X/efiDfHWauWx/Oy7d6bAftRj6L/SrVc4TsWUTd+x2FdjHBu80sr07rGFLIBe3ygLMZy5Lx0Mz0n0yIHo2HGF+ildyzcJnwtYPmh4zUt5xehDZGivC+Bb9j05CfY6Qo4WZJTUaJNwbGRlylOV+4TICMSjRaP+I7uVGCJT7W5qNuuOGrHvxna56xOf2JSFA6X6qhRgSQDhiV56tGhzKU3l3aXxzzHovRAl4S29eh2TLw5p3yN7Mr6ZcDWw0kf53I57ZvWCqOJw2iQn/3pmTPOwwclP2izeDdWkcwcqMOiZvoyt2cjo+KRph0u3ebYS87lUv8LQ+QkZmJxDmU8sfswad0++FII3HeKPl1cXuk8WH7Uc5VuM2TGB5UmPcwv4LKrQGSojzT+m6cD//BmHfAL+Wpvh5IIR6Yjqc/of00clC9WjA1tmwlNRRNoAnbDteWA5+yesNJeN0pH+ndCB4EpyN8VFeJGqNHSy+bWefnZ008paupgH96clbickWMZ0a4WeRdomIc0s0rOVQ1277pgSWDikSLrd3XTaFvU1YqP/qhfmwD/V4RljKwGK4FU2x86PN6hFr5tHNu3u+o+mhK5hh/l6Jqgw9tY8aQqTsf2AOqgv3upgKMfzmQgLY7/utFg=
