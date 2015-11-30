@@ -1,8 +1,6 @@
 defmodule IsbndbexTest.Api.Book do
   use ExUnit.Case
 
-  require Logger
-
   import Isbndbex.Api.Book
 
   @key Application.get_env(:isbndbex, :key)
