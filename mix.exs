@@ -4,7 +4,9 @@ defmodule Isbndbex.Mixfile do
   [:index_searched, :data, :author_data, :name, :id, :awards_text, :marc_enc_level, :subject_ids, :summary, :isbn13, :dewey_normal,
    :title_latin, :publisher_id, :dewey_decimal, :publisher_text, :language, :physical_description_text, :isbn10, :edition_info, :urls_text,
    :lcc_number, :publisher_name, :book_id, :notes, :title, :title_long, :result_count, :page_count, :current_page, :author_ids, :author_id,
-   :category_ids, :dates, :book_count, :book_ids, :last_name, :name_latin, :first_name]
+   :category_ids, :dates, :book_count, :book_ids, :last_name, :name_latin, :first_name, :location, :subject_id, :category_id, :child_ids,
+   :parent_id, :min_time_unix, :max_time_unix, :store_title, :store_id, :store_url, :currency_code, :is_historic, :price_time_unix, :is_new,
+   :in_stock, :price, :books_count]
 
   def project do
     [app: :isbndbex,
@@ -15,22 +17,10 @@ defmodule Isbndbex.Mixfile do
      deps: deps]
   end
 
-  # Configuration for the OTP application
-  #
-  # Type "mix help compile.app" for more information
   def application do
     [applications: [:logger, :httpoison]]
   end
 
-  # Dependencies can be Hex packages:
-  #
-  #   {:mydep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
-  #
-  # Type "mix help deps" for more examples and options
   defp deps do
     [{:httpoison, "~> 0.8"},
      {:credo, "~> 0.1.10"},
