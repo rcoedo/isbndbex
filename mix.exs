@@ -27,13 +27,13 @@ defmodule Isbndbex.Mixfile do
 
   defp deps do
     [{:httpoison, "~> 0.8"},
-     {:credo, "~> 0.1.10"},
+     {:credo, "~> 0.1.10", only: [:dev, :test]},
      {:poison, "~> 1.5"}]
   end
 
   defp description do
     """
-    Elixir wrapper for isbndb.com json api.
+    Elixir wrapper for isbndb rest api.
     """
   end
 
