@@ -14,6 +14,10 @@ defmodule Isbndbex.Mixfile do
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     name: "Isbndbex",
+     description: description,
+     package: package,
+     source_url: "https://github.com/rcoedo/isbndbex",
      deps: deps]
   end
 
@@ -25,5 +29,18 @@ defmodule Isbndbex.Mixfile do
     [{:httpoison, "~> 0.8"},
      {:credo, "~> 0.1.10"},
      {:poison, "~> 1.5"}]
+  end
+
+  defp description do
+    """
+    Elixir wrapper for isbndb.com json api.
+    """
+  end
+
+  defp package do
+    [files: ["lib", "mix.exs", "README.md", "LICENSE"],
+      maintainers: ["Roman Coedo"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/rcoedo/isbndbex"}]
   end
 end
