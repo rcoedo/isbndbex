@@ -1,8 +1,8 @@
 # Isbndbex [![Build Status](https://travis-ci.org/rcoedo/isbndbex.svg?branch=master)](https://travis-ci.org/rcoedo/isbndbex)
 
-Isbndbex is an elixir wrapper for [isbndb.com](http://isbndb.com/). This is my first elixir project, so excuse me if the
-the module does not meet your expectations or does not follow the common conventions.
+Isbndbex is an elixir wrapper for [isbndb.com](http://isbndb.com/). Check the documentation [here](http://rcoedo.github.io/isbndbex).
 
+This is my first elixir project, so excuse me if the the module does not meet your expectations or does not follow the common conventions.
 Any feedback will be much appreciated and I'll update the package as I learn more elixir :)
 
 ## Installation

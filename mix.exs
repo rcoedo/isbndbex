@@ -27,8 +27,10 @@ defmodule Isbndbex.Mixfile do
 
   defp deps do
     [{:httpoison, "~> 0.8"},
+     {:poison, "~> 1.5"},
      {:credo, "~> 0.1.10", only: [:dev, :test]},
-     {:poison, "~> 1.5"}]
+     {:earmark, "~> 0.1", only: :dev},
+     {:ex_doc, "~> 0.11", only: :dev}]
   end
 
   defp description do
