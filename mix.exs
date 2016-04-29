@@ -10,8 +10,8 @@ defmodule Isbndbex.Mixfile do
 
   def project do
     [app: :isbndbex,
-     version: "0.0.1",
-     elixir: "~> 1.1",
+     version: "0.1.0",
+     elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      name: "Isbndbex",
@@ -27,8 +27,7 @@ defmodule Isbndbex.Mixfile do
 
   defp deps do
     [{:httpoison, "~> 0.8"},
-     {:poison, "~> 1.5"},
-     {:credo, "~> 0.1.10", only: [:dev, :test]},
+     {:poison, "~> 2.0"},
      {:earmark, "~> 0.1", only: :dev},
      {:ex_doc, "~> 0.11", only: :dev}]
   end
